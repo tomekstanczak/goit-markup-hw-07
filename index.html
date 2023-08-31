@@ -38,6 +38,82 @@
             </li>
             <li><a class="subpage link" href="">Contacts</a></li>
           </ul>
+          <!--mobile menu-->
+          <button class="nav-button js-open-menu nav-button-padding" aria-expanded="false" aria-controls="nav-container">
+              <svg class="icon-hamburger" width="32px" height="22px"><use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
+          </button>
+            <div class="js-menu-container nav-mobile-menu nav-container" id="nav-container">
+              <div class="mobile-nav-position">
+          <button class="js-close-menu nav-close-button">
+            <svg class="modal-close-svg">
+                  <use href="./images/icons.svg#icon-closeform"></use>
+            </svg>
+          </button>
+              <ul class="list mobile-nav-list-position">
+            <li>
+              <a
+                class="subpage link mobile-nav-list-font studio"
+                href="./index.html"
+                target="_parent"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="subpage link mobile-nav-list-font" href="./portfolio.html" target="_parent"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="subpage link mobile-nav-list-font" href="">Contacts</a></li>
+          </ul>
+          <div class="mobile-nav-flex-bottom">
+           <address class="link mobile-nav-address">
+          <ul class="list mobile-nav-flex-adress">
+                        <li>
+              <a class="mobile-contacts link mobile-nav-phone-font" href="tel:+11(000)_111-11-11"
+                >+11(000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-contacts link mobile-nav-email-font" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          </address>
+        <ul class="list mobile-icons-nav-flex">
+                      <li class="icons-list-nav">
+                        <a href="">
+                          <svg height="24px" width="24px">
+                            <use href="./images/icons.svg#icon-instagram" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="icons-list-nav">
+                        <a href="">
+                          <svg height="24px" width="24px">
+                            <use href="./images/icons.svg#icon-facebook" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="icons-list-nav">
+                        <a href="">
+                          <svg height="24px" width="24px">
+                            <use href="./images/icons.svg#icon-twitter" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="icons-list-nav">
+                        <a href="">
+                          <svg height="24px" width="24px">
+                            <use href="./images/icons.svg#icon-linkedin" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    </div>
+          </div>
+          </div>
+          <!--end mobile menu-->
         </nav>
         <address class="link contacts">
           <ul class="list address-items">
@@ -59,8 +135,9 @@
       <!--section 1-->
       <section class="section page-part-one">
         <div class="conteiner section-one-items">
-          <h1 class="title-one">Effective Solutions for Your Business</h1>
-          <button data-modal-open class="push push-one" type="button">
+          <h1 class="title-one">Effective Solutions
+for Your Business</h1>
+          <button data-modal-open class="push-one" type="button">
             Order Service
           </button>
           <div class="modal is-hidden" data-modal>
@@ -141,7 +218,7 @@
                   </label>
                 </div>
                 <div class="button-modal-flex">
-                  <button type="submit" class="push push-form-modal">
+                  <button type="submit" class="push-form-modal">
                     Send
                   </button>
                 </div>
@@ -154,7 +231,7 @@
 
       <!--section 2-->
       <section class="section page-part-two">
-        <div class="conteiner">
+        <div class="conteiner conteiner-section-two">
           <h2 class="visually-hidden">Main features</h2>
           <ul class="list section-two-items">
             <li>
@@ -166,7 +243,8 @@
               <div class="box">
                 <h3 class="title-three">Strategy</h3>
                 <p class="text">
-                  Our goal is to identify the business problem to walk away with
+                  Our goal is to identify the business
+                  problem to walk away with
                   the perfect and creative solution.
                 </p>
               </div>
@@ -208,7 +286,8 @@
               <div class="box">
                 <h3 class="title-three">Technologies</h3>
                 <p class="text">
-                  Design practice focused on digital experiences. We bring forth
+                  Design practice focused on digital
+                  experiences. We bring forth
                   a deep passion for problem-solving.
                 </p>
               </div>
@@ -221,11 +300,14 @@
       <!--section 3-->
       <section class="section page-part-three">
         <div class="conteiner section-three-conteiner">
-          <h2 class="title-two title-two-item">What are we doing</h2>
+          <h2 class="title-two title-three-item">What are we doing</h2>
           <ul class="list section-three-items">
             <li>
               <img
                 src="images/screen.jpg"
+                srcset="
+                     images/screen@2x.jpg 2x, 
+                     images/screen@3x.jpg 3x"
                 alt="Computer screen with open webpage."
                 width="360"
                 height="300"
@@ -234,6 +316,8 @@
             <li>
               <img
                 src="images/smartphone.jpg"
+                srcset="images/smartphone@2x 2x,
+                images/smartphone@3x 3x"
                 alt="Smartphone with open webpage"
                 width="360"
                 height="300"
@@ -242,6 +326,8 @@
             <li>
               <img
                 src="images/laptopandphone.jpg"
+                srcset="images/laptopandphone@2x.jpg 2x,
+                images/laptopandphone@3x.jpg 3x"
                 alt="Laptop and smartphone with open pages"
                 width="360"
                 height="300"
@@ -254,21 +340,23 @@
 
       <!--section 4-->
       <section class="section page-part-four">
-        <div class="conteiner">
-          <h2 class="title-two title-two-item">Our Team</h2>
+        <div class="conteiner conteiner-section-four">
+          <h2 class="team title-two-item">Our Team</h2>
           <ul class="list section-four-item">
             <li class="page-part-four-figure">
               <div class="box-section-four">
                 <img
-                  class="page-part-four-figure"
+                  class=""
                   src="images/markguerrero.jpg"
+                  srcset="images/markguero@2x.jpg 2x, images/markguero@3x.jpg 3x
+                  "
                   alt="gentleman with a beard"
                   width="264"
                   height="260"
                 />
                 <div class="box-section-four-text">
-                  <h3 class="title-three">Mark Guerrero</h3>
-                  <p class="text">Product Designer</p>
+                  <h3 class="team-names">Mark Guerrero</h3>
+                  <p class="team-text">Product Designer</p>
                   <div class="page-part-four-icons">
                     <ul class="list icons-list-flex">
                       <li class="icons-list">
@@ -307,15 +395,15 @@
             <li class="page-part-four-figure">
               <div class="box-section-four">
                 <img
-                  class="page-part-four-figure"
                   src="images/tomford.jpg"
+                  srcset="images/tomford@2x.jpg 2x, images/tomford@3x.jpg 3x"
                   alt="gentleman with nice hair"
                   width="264"
                   height="260"
                 />
                 <div class="box-section-four-text">
-                  <h3 class="title-three">Tom Ford</h3>
-                  <p class="text">Frontend Developer</p>
+                  <h3 class="team-names">Tom Ford</h3>
+                  <p class="team-text">Frontend Developer</p>
                   <div class="page-part-four-icons">
                     <ul class="list icons-list-flex">
                       <li class="icons-list">
@@ -354,15 +442,15 @@
             <li class="page-part-four-figure">
               <div class="box-section-four">
                 <img
-                  class="page-part-four-figure"
                   src="images/camilagarcia.jpg"
+                  srcset="images/camiliagarcia@2x.jpg 2x, images/camiliagarcia@3x.jpg 3x"
                   alt="nice lady"
                   width="264"
                   height="260"
                 />
                 <div class="box-section-four-text">
-                  <h3 class="title-three">Camila Garcia</h3>
-                  <p class="text">Marketing</p>
+                  <h3 class="team-names">Camila Garcia</h3>
+                  <p class="team-text">Marketing</p>
                   <div class="page-part-four-icons">
                     <ul class="list icons-list-flex">
                       <li class="icons-list">
@@ -401,15 +489,15 @@
             <li class="page-part-four-figure">
               <div class="box-section-four">
                 <img
-                  class="page-part-four-figure"
                   src="images/danielwilson.jpg"
+                  srcset="images/danielwilson@2x.jpg 2x, images/danielwilson@3x 3x"
                   alt="gentleman wearing a t-shirt"
                   width="264"
                   height="260"
                 />
                 <div class="box-section-four-text">
-                  <h3 class="title-three">Daniel Wilson</h3>
-                  <p class="text">UI Designer</p>
+                  <h3 class="team-names">Daniel Wilson</h3>
+                  <p class="team-text">UI Designer</p>
                   <div class="page-part-four-icons">
                     <ul class="list icons-list-flex">
                       <li class="icons-list">
@@ -450,9 +538,9 @@
       </section>
       <!--end section 4-->
       <!--section 5 -->
-      <section class="section">
-        <div class="conteiner">
-          <h2 class="title-two title-two-item">Customers</h2>
+      <section class="section page-part-five">
+        <div class="conteiner conteiner-section-five">
+          <h2 class="customers-heading">Customers</h2>
           <ul class="list section-company-flex">
             <div>
               <li>
@@ -543,13 +631,13 @@
           <a class="logo link" href="/"
             >WEB<span class="logo-footer-color">Studio</span></a
           >
-          <p class="footer-style footer-text">
+          <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
         </div>
         <div class="footer-social-media-box">
-          <p>Sodial media</p>
+          <p>Social media</p>
           <div class="footer-social-media">
             <ul class="list icons-list-flex-footer">
               <li class="icons-list-footer">
@@ -613,5 +701,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
