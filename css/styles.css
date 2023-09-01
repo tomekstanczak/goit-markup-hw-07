@@ -104,7 +104,7 @@ h6 {
   font-weight: 500;
   letter-spacing: 0.04em;
 }
-.title-one,
+
 .title-two,
 .title-three,
 .team,
@@ -370,7 +370,8 @@ h6 {
   padding: 24px 0px 24px 0px;
 }
 .title-one {
-  white-space: pre-wrap;
+  max-width: 320px;
+  text-align: center;
 }
 .push-one:hover,
 .push-one:focus,
@@ -627,6 +628,13 @@ body {
   .footer-label {
     text-align: left;
   }
+  .title-one {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: var(--body-letter-spacing);
+    text-align: center;
+  }
   .section-two-items,
   .section-four-item,
   .section-company-flex {
@@ -761,6 +769,7 @@ body {
     margin-inline: auto;
   }
   .title-one {
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: var(--body-letter-spacing);
