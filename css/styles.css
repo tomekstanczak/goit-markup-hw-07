@@ -258,7 +258,8 @@ h6 {
 .nav-container {
   position: fixed;
   min-width: 320px;
-  max-width: 1170px;
+  max-width: 767px;
+  width: 100%;
   background-color: var(--white-color);
   top: 0;
   left: 0;
@@ -290,7 +291,6 @@ h6 {
   position: relative;
   height: 100%;
   width: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -475,7 +475,7 @@ h6 {
 }
 /* size addjusted */
 body {
-  max-width: 428px;
+  max-width: 767px;
   min-width: 320px;
 }
 .conteiner {
@@ -598,6 +598,7 @@ body {
   }
   body {
     min-width: 768px;
+    max-width: 1199px;
   }
   .page-part-two-box,
   .page-part-three {
