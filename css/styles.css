@@ -217,6 +217,10 @@ h6 {
 .push-form-modal {
   border-color: var(--iris-color);
 }
+.footer-input:hover,
+.footer-input:focus {
+  border-color: var(--white-color);
+}
 
 .push-one,
 .push-form-modal,
@@ -455,6 +459,7 @@ h6 {
 }
 .footer-input {
   background-color: transparent;
+  border-color: #d9d9d933;
   border-style: solid;
   border-width: 1px;
   width: 100%;
@@ -467,6 +472,9 @@ h6 {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+.footer-input::placeholder {
+  color: #d9d9d933;
 }
 .footer-button {
   display: flex;
